@@ -1,0 +1,67 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-areas: "intro cmd"
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    margin-left:-2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #707070;
+}
+.description{
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.pro{
+    color: white;
+    padding: 0.2rem 0.2rem 0 0.2rem;
+    background-color: #707070;
+    box-shadow: 4px 3px rgba(0, 0, 0, 0.17)
+}
+
+
+/* cmd styles */
+
+.cmd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bash{
+    color: white;
+    width: 576px;
+    height: 271.44px;
+    background-color:#2d3436;
+    border-radius: 4px;
+    padding: 1rem;
+    overflow: scroll;
+}
+.root{
+    margin-top: 5px;
+    color: yellow;
+}
+.input{
+    margin-left: 5px;
+    width: auto;
+    color: aquamarine;
+}

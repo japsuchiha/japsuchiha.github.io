@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japsuchiha/japsuchiha.github.io.git"
+  },
+  "author": "Japneet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/japsuchiha/japsuchiha.github.io/issues"
+  },
+  "homepage": "https://github.com/japsuchiha/japsuchiha.github.io#readme",
+  "dependencies": {
+    "typed.js": "^2.0.8"
+  }
+}
