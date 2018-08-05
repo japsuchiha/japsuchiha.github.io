@@ -20,14 +20,16 @@ html, body{
 }
 
 .name{
-    margin-left:-2rem;
+    margin-left:2rem;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #707070;
 }
 .description{
     margin-top: 1.5rem;
     line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin-left: -3.5rem;
 }
 
 .pro{
@@ -35,6 +37,12 @@ html, body{
     padding: 0.2rem 0.2rem 0 0.2rem;
     background-color: #707070;
     box-shadow: 4px 3px rgba(0, 0, 0, 0.17)
+}
+
+.theme{
+    position: absolute;
+    top: 95%;
+    right: 90%;
 }
 
 
@@ -48,20 +56,21 @@ html, body{
 }
 
 .bash{
-    color: white;
+    color: #222f3e;
     width: 576px;
     height: 271.44px;
-    background-color:#2d3436;
+    background-color:#FAFAFA;
     border-radius: 4px;
     padding: 1rem;
     overflow: scroll;
+    overflow-x: hidden;
 }
 .root{
     margin-top: 5px;
-    color: yellow;
+    color: #576574;
 }
 .input{
     margin-left: 5px;
     width: auto;
-    color: aquamarine;
+    color: #3d3d3d;
 }

@@ -1,7 +1,16 @@
 
-
  let area = document.querySelector('#typed');
-// let command = document.querySelector('.commands');
+ let store = undefined;
+let dirs;
+let dataAll;
+fetch('./data/data.json')
+  .then((res) => res.json())
+  .then((data) => {
+    console.log('data:', data);
+    dataAll = data
+    console.log(dataAll);
+    dirs = dataAll.dir;
+  })
 let elem = $('#typed');
     var typed6 = new Typed(area,{
     strings: ["",'Welcome feel free to go through my stuff ...^1000 <br> `enter "help" to get started...`'],
@@ -17,30 +26,53 @@ let elem = $('#typed');
     $('.commands').keydown(function(e){
         let code = e.keyCode;
         let command = (e.target);
-        console.log(code);
+        console.log(command.parentNode.querySelector('.write').textContent);
         if(code === 13){
             e.preventDefault();
             console.log(command.textContent)
             console.log(document.querySelector('.input'))
-            let val = command.textContent;
+            let split = command.textContent.split(' ');
+            let val = split[0];
+            
+            if(split[1]){
+                store = split[1];
+            }
+            console.log(split[1]);
             console.log(val);
             switch(val){
                 case "help":
                 help();
-                resetCommand(command);
+                resetCommand(command,split[1]);
                 break;
                 case "clear":
-                clear(command);
+                clear();
                 update();
+                break;
+                case "ls":
+                ls(command.parentNode.querySelector('.write').textContent);
+                console.log(store);
+                resetCommand(command,store);
+                break;
+                case "cd":
+                cd(command,store);
+                break;
+                case "home":
+                resetCommand(command,"root");
+                break;
+                case "open":
+                open(command,store)
+                resetCommand(command,store)
                 break;
                 default:
                 error();
-                resetCommand(command);
+                console.log(store)
+                resetCommand(command,store);
             }
         }
         
     })
 }
+
 
   let enter = `<div class="root">
   <span class="write">$root</span>
@@ -54,8 +86,12 @@ let elem = $('#typed');
 setTimeout(root,4500);
 
 let help = ()=>{
-    let message = `<p class="result">cd projects cd about cd resume cd skills</p>`;
-    return($('.commands').append(message));
+    dataAll.help.map((obj)=>{
+        let display = `
+        <li>${obj}</li>
+        `
+        $('.commands').append(display);
+    })
 }
 
 let error = ()=>{
@@ -71,15 +107,50 @@ let clear = () =>{
     </div>
     </div>`;
     $('.input').focus();
+    store = undefined;
 }
-let resetCommand = (command)=>{
+
+let ls = (load) =>{
+    load = load.slice(1,load.length)
+    console.log(dataAll[load]);
+    dataAll[load].map((arr)=>{
+        let display = `
+            <li>${arr}</li>
+            `
+            $('.commands').append(display);
+        console.log(arr);
+    })
+}
+
+let cd = (command,val)=>{
+    console.log(val);
+    if(dirs.indexOf(val) === -1 ){
+        console.log(val);
+        console.log(command.parentNode.querySelector('.write').textContent)
+        error();
+        resetCommand(command,command.parentNode.querySelector('.write').textContent.slice(1,command.parentNode.querySelector('.write').textContent.length));
+    }
+    else{
+        resetCommand(command,val);
+    }
+        
+}
+
+let open = (command,val) =>{
+    console.log(val);
+    $('.commands').append(dataAll[val])
+}
+let resetCommand = (command,val)=>{
     console.log($('.commands'));
     const newCommand = command.parentNode.cloneNode(true);
     command.setAttribute('contenteditable', false);
     command.setAttribute('disabled',true);
     console.log(command);
-    if(command.innerHTML === "help"){
-       newCommand.querySelector('.write').textContent = "$root ";
+    if(val === undefined || dirs.indexOf(val) === -1){
+       newCommand.querySelector('.write').textContent = command.parentNode.querySelector('.write').textContent;
+    }
+    else{
+        newCommand.querySelector('.write').textContent = `$${val}`;
     }
     $('.commands').append(newCommand);
     newCommand.querySelector('.input').innerHTML = "";
