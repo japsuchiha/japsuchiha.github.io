@@ -161,6 +161,10 @@ let open = (command,val) =>{
             
         })
     }
+    else{
+        let display = dataAll[val];
+        $('.commands').append(display)
+    }
     
 }
 let resetCommand = (command,val)=>{
