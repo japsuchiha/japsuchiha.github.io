@@ -9,9 +9,6 @@ html, body{
 .container{
     height: 100%;
     max-width: 100%;
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    grid-template-areas: "intro cmd"
 }
 
 .intro{
@@ -28,10 +25,11 @@ html, body{
     color: #2c3e50;
 }
 .description{
-    margin-top: 1.5rem;
+    position: relative;
     line-height: 1.5rem;
     font-size: 1.2rem;
-    margin-left: -3.5rem;
+    top: 2rem;
+    left: -1.85rem;
     color: #2c3e50;
 }
 
@@ -71,4 +69,29 @@ html, body{
     margin-left: 5px;
     width: auto;
     color: turquoise;
+}
+.link{
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+/* media query */
+@media(max-width:1080px){
+    .container{
+        display: grid;
+    }
+    .name{
+        margin: 0;
+    }
+    .description{
+        left:-2.7rem;
+    }
+}
+
+@media(min-width: 1080px){
+    .container{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-template-areas: "intro cmd";
+    }
 }

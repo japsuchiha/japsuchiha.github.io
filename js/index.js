@@ -144,7 +144,24 @@ let cd = (command,val)=>{
 
 let open = (command,val) =>{
     console.log(val);
-    $('.commands').append(dataAll[val])
+    console.log(dataAll[val])
+    console.log(command.parentNode.querySelector('.write').textContent)
+    if(command.parentNode.querySelector('.write').textContent === "$contactme"){
+        dataAll[val].map((obj)=>{
+            obj.map((stuff)=>{
+                let display;
+                console.log(stuff);
+                if(store === "mail.ju")
+                    display = `<a class = "link" href="mailto:${stuff} target="_blank">${stuff}</a>`;
+                else{
+                    display = `<a class="link" href="${stuff}" target="_blank">${stuff}</a>`;
+                }
+            $('.commands').append(display);
+            })
+            
+        })
+    }
+    
 }
 let resetCommand = (command,val)=>{
     console.log($('.commands'));
