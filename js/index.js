@@ -11,12 +11,17 @@ fetch('./data/data.json')
     console.log(dataAll);
     dirs = dataAll.dir;
   })
+  window.onload = ()=>{
+      setTimeout(()=>{
+          document.querySelector('.bash').style.display = "block";
+      }, 1000);
+  }
 let elem = $('#typed');
     var typed6 = new Typed(area,{
     strings: ["",'Welcome feel free to go through my stuff ...^1000 <br> `enter "help" to get started...`'],
     typeSpeed: 10,
     backSpeed: 0,
-    startDelay: 2000,
+    startDelay: 3000,
     onStringTyped: function() {
     return elem.siblings('.typed-cursor').remove();}
   });
@@ -57,7 +62,8 @@ let elem = $('#typed');
                 cd(command,store);
                 break;
                 case "home":
-                resetCommand(command,"root");
+                store = "root";
+                resetCommand(command,store);
                 break;
                 case "open":
                 open(command,store)
@@ -83,7 +89,7 @@ let elem = $('#typed');
       $('.input').focus();
       update();
   }
-setTimeout(root,4500);
+setTimeout(root,5500);
 
 let help = ()=>{
     dataAll.help.map((obj)=>{

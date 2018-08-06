@@ -4,7 +4,7 @@
     "text" : ["aboutme.ju","resume.ju"],
     "root" : [["skills"],["projects"],["aboutme.ju"],["resume.ju"]],
     "skills" : [["HTML","CSS", "JS" ,"REACT","REDUX"],["R" ,"SQL", "Python"],["Illustrator", "After Effects", "XD", "Photoshop"]],
-    "projects": [["Leftovers"],["Tweeter"],["WorldCup Notifier"],["GameOfLife"]],
+    "projects": [["Leftovers.ju"],["Tweeter.ju"],["WorldCup Notifier.ju"],["GameOfLife.ju"]],
     "aboutme.ju" : [["Bonjour! I am a man with various interest and once i decide to pursue a field i only get out of it once i have made my mark. Due to this quality i played various roles such as frontend developer, motion graphic artist, Cisco Certified network engineer. Now i am aspiring to become a data scientist!"]],
     "Leftovers" : [["This app lets you add "]]
 }
