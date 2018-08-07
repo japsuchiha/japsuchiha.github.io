@@ -83,15 +83,16 @@ html, body{
     .container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .intro{
-        margin-top: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .name{
         font-size: 2rem;
+        margin: 0;
     }
     .description{
         margin: 0;
