@@ -25,7 +25,7 @@ html, body{
     color: #2c3e50;
 }
 .description{
-    position: relative;
+   
     line-height: 1.5rem;
     font-size: 1.2rem;
     top: 2rem;
@@ -60,6 +60,7 @@ html, body{
     overflow: scroll;
     overflow-x: hidden;
     display: none;
+
 }
 .root{
     margin-top: 5px;
@@ -67,7 +68,9 @@ html, body{
 }
 .input{
     margin-left: 5px;
-    width: auto;
+    width: 400px;
+    display: inline-block;
+    outline-color: #22262e;
     color: turquoise;
 }
 .link{
@@ -76,7 +79,36 @@ html, body{
 }
 
 /* media query */
-@media(max-width:1080px){
+@media(max-width:610px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        font-size: 2rem;
+    }
+    .description{
+        margin: 0;
+        font-size: 1rem;
+    }
+    .cmd{
+        margin-top: 7rem;
+    }
+    .bash{
+        overflow-x: scroll;
+        width: 90%;
+    }
+    .input{
+        width: 60%;
+    }
+}
+@media (min-width:610px) and (max-width:1080px) {
     .container{
         display: grid;
     }
@@ -84,6 +116,7 @@ html, body{
         margin: 0;
     }
     .description{
+        position: relative;
         left:-2.7rem;
     }
 }
@@ -93,5 +126,8 @@ html, body{
         display: grid;
         grid-template-columns: 1.5fr 2fr;
         grid-template-areas: "intro cmd";
+    }
+    .description{
+        position: relative;
     }
 }

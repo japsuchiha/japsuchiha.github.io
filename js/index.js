@@ -6,9 +6,7 @@ let dataAll;
 fetch('./data/data.json')
   .then((res) => res.json())
   .then((data) => {
-    console.log('data:', data);
     dataAll = data
-    console.log(dataAll);
     dirs = dataAll.dir;
   })
   window.onload = ()=>{
@@ -27,23 +25,17 @@ let elem = $('#typed');
   });
   let i = 0;
   let update = () =>{
-      console.log("update");
     $('.commands').keydown(function(e){
         let code = e.keyCode;
         let command = (e.target);
-        console.log(command.parentNode.querySelector('.write').textContent);
         if(code === 13){
             e.preventDefault();
-            console.log(command.textContent)
-            console.log(document.querySelector('.input'))
             let split = command.textContent.split(' ');
             let val = split[0];
             
             if(split[1]){
                 store = split[1];
             }
-            console.log(split[1]);
-            console.log(val);
             switch(val){
                 case "help":
                 help();
@@ -55,7 +47,6 @@ let elem = $('#typed');
                 break;
                 case "ls":
                 ls(command.parentNode.querySelector('.write').textContent);
-                console.log(store);
                 resetCommand(command,store);
                 break;
                 case "cd":
@@ -71,7 +62,6 @@ let elem = $('#typed');
                 break;
                 default:
                 error();
-                console.log(store)
                 resetCommand(command,store);
             }
         }
@@ -118,21 +108,16 @@ let clear = () =>{
 
 let ls = (load) =>{
     load = load.slice(1,load.length)
-    console.log(dataAll[load]);
     dataAll[load].map((arr)=>{
         let display = `
             <li>${arr}</li>
             `
             $('.commands').append(display);
-        console.log(arr);
     })
 }
 
 let cd = (command,val)=>{
-    console.log(val);
     if(dirs.indexOf(val) === -1 ){
-        console.log(val);
-        console.log(command.parentNode.querySelector('.write').textContent)
         error();
         resetCommand(command,command.parentNode.querySelector('.write').textContent.slice(1,command.parentNode.querySelector('.write').textContent.length));
     }
@@ -143,14 +128,10 @@ let cd = (command,val)=>{
 }
 
 let open = (command,val) =>{
-    console.log(val);
-    console.log(dataAll[val])
-    console.log(command.parentNode.querySelector('.write').textContent)
     if(command.parentNode.querySelector('.write').textContent === "$contactme"){
         dataAll[val].map((obj)=>{
             obj.map((stuff)=>{
                 let display;
-                console.log(stuff);
                 if(store === "mail.ju")
                     display = `<a class = "link" href="mailto:${stuff} target="_blank">${stuff}</a>`;
                 else{
@@ -168,11 +149,9 @@ let open = (command,val) =>{
     
 }
 let resetCommand = (command,val)=>{
-    console.log($('.commands'));
     const newCommand = command.parentNode.cloneNode(true);
     command.setAttribute('contenteditable', false);
     command.setAttribute('disabled',true);
-    console.log(command);
     if(val === undefined || dirs.indexOf(val) === -1){
        newCommand.querySelector('.write').textContent = command.parentNode.querySelector('.write').textContent;
     }
@@ -181,7 +160,5 @@ let resetCommand = (command,val)=>{
     }
     $('.commands').append(newCommand);
     newCommand.querySelector('.input').innerHTML = "";
-    console.log(newCommand.querySelector('.input'));
     newCommand.querySelector('.input').focus();
-    console.log(newCommand);
 }
