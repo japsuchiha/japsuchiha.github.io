@@ -133,7 +133,7 @@ html, body{
     .description{
         position: relative;
     }
-    .cmd{
+    .bash{
         overflow: auto;
     }
 }
