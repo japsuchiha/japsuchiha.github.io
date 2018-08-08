@@ -1,11 +1,11 @@
 {
     "help" : [["cd : to enter into directories"],["ls : to peek at files"],["clear : to clear cli"],["open : to open files"],["home : to jump back to root directory"]],
     "dir" : ["skills","projects","root","contactme"],
-    "text" : ["aboutme.ju","resume.ju"],
+    "text" : ["aboutme.ju"],
     "root" : [["skills"],["projects"],["aboutme.ju"],["resume.ju"],["contactme"]],
     "skills" : [["HTML","CSS", "JS" ,"REACT","REDUX"],["R" ,"SQL", "Python"],["JAVA,C++"],["Illustrator", "After Effects", "XD", "Photoshop"]],
     "projects": [["Leftovers.ju"],["Tweeter.ju"],["WorldCupNotifier.ju"],["GameOfLife.ju"]],
-    "contactme": [["mail.ju"],["github.ju"],["linkedIn.ju"]],
+    "contactme": [["mail.ju"],["github.ju"],["linkedIn.ju"],["resume.ju"]],
     "mail.ju" : [["japneet@umd.edu"]],
     "github.ju" : [["https://github.com/japsuchiha/"]],
     "linkedIn.ju" :[["https://www.linkedin.com/in/japneet-s-710600103/"]],
@@ -13,5 +13,6 @@
     "Leftovers.ju" : [["This app displays your meal plan for the day based on calories calculated by Mifflin-St Jeor Equation which calculates basal metabolic rate (BMR). The app also helps you to identify what you can make with just the little dtuff left in your fridge."]],
     "Tweeter.ju" : [["This app takes in tweets from your acoount and runs a sentiments analysis on them giving you which sentiment you used the most and also gives the most common words you used for that sentiment. Also uses D3.js to display the results."]],
     "WorldCupNotifier.ju": [["This app lets you see the live fifa score by sending you notifications on your desktop"]],
-    "GameOfLife.ju": [["Conway's GameOfLife"]]
+    "GameOfLife.ju": [["Conway's GameOfLife"]],
+    "resume.ju":[["./data/MyResume.pdf"]]
 }

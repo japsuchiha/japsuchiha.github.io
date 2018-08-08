@@ -57,7 +57,7 @@ html, body{
     background-color:#22262e;
     border-radius: 4px;
     padding: 1rem;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
     display: none;
 
@@ -75,7 +75,7 @@ html, body{
 }
 .link{
     text-decoration: none;
-    color: #ecf0f1;
+    color: #425E7A;
 }
 
 /* media query */
@@ -102,7 +102,6 @@ html, body{
         margin-top: 7rem;
     }
     .bash{
-        overflow-x: scroll;
         width: 90%;
     }
     .input{
@@ -110,6 +109,9 @@ html, body{
     }
 }
 @media (min-width:610px) and (max-width:1080px) {
+    body{
+        overflow: auto;
+    }
     .container{
         display: grid;
     }

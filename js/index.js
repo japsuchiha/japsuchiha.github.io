@@ -13,6 +13,9 @@ fetch('./data/data.json')
       setTimeout(()=>{
           document.querySelector('.bash').style.display = "block";
       }, 1000);
+      setTimeout(()=>{
+          document.querySelector('body').style.overflow = "auto";
+      }, 5000)
   }
 let elem = $('#typed');
     var typed6 = new Typed(area,{
@@ -133,9 +136,9 @@ let open = (command,val) =>{
             obj.map((stuff)=>{
                 let display;
                 if(store === "mail.ju")
-                    display = `<a class = "link" href="mailto:${stuff} target="_blank">${stuff}</a>`;
+                    display = `<a class = "link" href="mailto:${stuff} target="_blank">${val.slice(0,-3)}</a>`;
                 else{
-                    display = `<a class="link" href="${stuff}" target="_blank">${stuff}</a>`;
+                    display = `<a class="link" href="${stuff}" target="_blank">${val.slice(0,-3)}</a>`;
                 }
             $('.commands').append(display);
             })
