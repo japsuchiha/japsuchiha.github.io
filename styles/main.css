@@ -133,4 +133,7 @@ html, body{
     .description{
         position: relative;
     }
+    .cmd{
+        overflow: auto;
+    }
 }
