@@ -9,7 +9,7 @@
     "mail.ju" : [["japneet@umd.edu"]],
     "github.ju" : [["https://github.com/japsuchiha/"]],
     "linkedIn.ju" :[["https://www.linkedin.com/in/japneet-s-710600103/"]],
-    "aboutme.ju" : [["Bonjour! My name is Japneet and i am a Sophomore at UMD. My interest extend from developing and designing for the web to configuring and setting up routers and switches. These days I am working towards getting my head around data science! Apart from studies I am a hardcore Madrid Fan and an anime lover! Which is evident by my portfolios name ;)"]],
+    "aboutme.ju" : [["Bonjour! My name is Japneet and i am a Sophomore at UMD. My interests extend from developing and designing for the web to configuring and setting up routers and switches.But,These days I am working towards getting my head around data science! Apart from studies I am a hardcore Madrid Fan and an anime lover! Which is evident by my portfolios name ;)"]],
     "Leftovers.ju" : [["This app displays your meal plan for the day based on calories calculated by Mifflin-St Jeor Equation which calculates basal metabolic rate (BMR). The app also helps you to identify what you can make with just the little stuff left in your fridge."]],
     "Tweeter.ju" : [["This app takes in tweets from your acoount and runs a sentiments analysis on them giving you which sentiment you used the most and also gives the most common words you used for that sentiment. Also uses D3.js to display the results."]],
     "WorldCupNotifier.ju": [["This app lets you see the live fifa score by sending you notifications on your desktop"]],
