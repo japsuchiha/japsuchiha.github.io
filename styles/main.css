@@ -77,7 +77,15 @@ html, body{
     text-decoration: none;
     color: #425E7A;
 }
-
+.footer{
+    position: relative;
+    top: 14rem;
+    left: 13rem;
+    font-size: 0.8rem;
+}
+.fa-heart{
+    color: #ff7675;
+}
 /* media query */
 @media(max-width:610px){
     .container{
@@ -107,6 +115,11 @@ html, body{
     .input{
         width: 60%;
     }
+    .footer{
+        position: relative;
+        top: 8rem;
+        left: 0rem;
+    }
 }
 @media (min-width:610px) and (max-width:1080px) {
     body{
@@ -121,6 +134,11 @@ html, body{
     .description{
         position: relative;
         left:-2.7rem;
+    }
+    .footer{
+        position: relative;
+        top: 5rem;
+        left: 0rem;
     }
 }
 
