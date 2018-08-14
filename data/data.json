@@ -14,5 +14,5 @@
     "Tweeter.ju" : [["This app takes in tweets from your acoount and runs a sentiments analysis on them giving you which sentiment you used the most and also gives the most common words you used for that sentiment. Also uses D3.js to display the results."]],
     "WorldCupNotifier.ju": [["This app lets you see the live fifa score by sending you notifications on your desktop"]],
     "GameOfLife.ju": [["Conway's GameOfLife"]],
-    "resume.ju":[["./data/MyResume.pdf"]]
+    "resume.ju":[["./data/Resume.pdf"]]
 }

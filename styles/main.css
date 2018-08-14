@@ -75,12 +75,12 @@ html, body{
 }
 .link{
     text-decoration: none;
-    color: #425E7A;
+    color: #ff7675;
 }
 .footer{
-    position: relative;
-    top: 14rem;
-    left: 13rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 3rem;
     font-size: 0.8rem;
 }
 .fa-heart{
@@ -116,9 +116,9 @@ html, body{
         width: 60%;
     }
     .footer{
-        position: relative;
-        top: 8rem;
-        left: 0rem;
+        position: absolute;
+        bottom: 0.5rem;
+        right: auto;
     }
 }
 @media (min-width:610px) and (max-width:1080px) {
@@ -136,9 +136,9 @@ html, body{
         left:-2.7rem;
     }
     .footer{
-        position: relative;
-        top: 5rem;
-        left: 0rem;
+        position: absolute;
+        bottom: 0.5rem;
+        right: auto;
     }
 }
 
