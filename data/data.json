@@ -1,5 +1,5 @@
 {
-    "help" : [["cd : to enter into directories"],["ls : to peek at files"],["clear : to clear cli"],["open : to open files"],["home : to jump back to root directory"]],
+    "help" : [["cd : to enter into directories"],["ls : to see files in a directory"],["clear : to clear cli"],["open : to open .ju files"],["home : to jump back to root directory"]],
     "dir" : ["skills","projects","root","contactme"],
     "text" : ["aboutme.ju"],
     "root" : [["skills"],["projects"],["aboutme.ju"],["contactme"]],
