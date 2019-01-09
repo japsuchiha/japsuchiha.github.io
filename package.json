@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/japsuchiha/japsuchiha.github.io#readme",
   "dependencies": {
-    "typed.js": "^2.0.8"
+    "typed.js": "^2.0.9"
   }
 }
