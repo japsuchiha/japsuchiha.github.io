@@ -1,6 +1,6 @@
 
- let area = document.querySelector('#typed');
- let store = undefined;
+let area = document.querySelector('#typed');
+let store = undefined;
 let dirs;
 let dataAll;
 fetch('./data/data.json')
