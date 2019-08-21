@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-ExtraBold.otf")
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Gilroy";
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.four {
+    height: 50vh;
+    background: white;
+    font-size: 20rem;
+    color: #191919;
+}
+
+.four > p {
+    position: relative;
+    top: 172px;
+}
+
+.text {
+    background: #191919;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.text > p {
+    position: relative;
+    top: 100px;
+}
+
+@media (max-width:768px) {
+    .four {
+        font-size: 10rem;
+    }
+
+    .four > p {
+        top: 220px;
+    }
+
+    .text {
+        font-size: 1.25rem;
+    }
+
+    .text > p {
+        top: 70px;
+    }
+}
