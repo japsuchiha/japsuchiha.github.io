@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('./assests/fonts/Gotham-Bold.otf');
+}
+body {
+    margin: 0;
+    height: 100vh;
+    .animation {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        .rec-1, .rec-2, .rec-3, .rec-4 {
+            height: 100%;
+            width: 25%;
+            background: #000000;
+            transform: scaleY(0);
+        }
+        .text {
+            position: absolute;
+        }
+        p {
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            padding-left: 20px;
+            font-family: 'Gotham';
+            font-size: 20px;
+            opacity: 0;
+        }
+    }
+}
