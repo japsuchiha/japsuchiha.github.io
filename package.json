@@ -1,22 +1,18 @@
 {
-  "name": "website",
+  "name": "web2020",
   "version": "1.0.0",
-  "description": "my website",
+  "description": "Lets deploy this fucker!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./style.scss ./main.css",
+    "build": "browserify ./scripts/index.js -o ./scripts/bundle.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/japsuchiha/japsuchiha.github.io.git"
-  },
-  "author": "Japneet",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/japsuchiha/japsuchiha.github.io/issues"
-  },
-  "homepage": "https://github.com/japsuchiha/japsuchiha.github.io#readme",
+  "author": "japsuchiha",
+  "license": "ISC",
   "dependencies": {
-    "typed.js": "^2.0.9"
+    "browserify": "^16.5.0",
+    "lottie-web": "^5.5.10",
+    "sass": "^1.24.2"
   }
 }
