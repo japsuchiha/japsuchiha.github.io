@@ -7,6 +7,11 @@
     <title>Document</title>
     <link href="main.css" rel="stylesheet">
     <script src ="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
+    <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
     <div class="animation">
@@ -15,11 +20,258 @@
         <div class="rec-3"></div>
         <div class="rec-4"></div>
         <div class="text">
-            <p class="text-1">Designer, </p>
-            <p class="text-2">Developer, </p>
-            <p class="text-3">Engineer</p>
+            <p class="text-1">Designer.</p>
+            <p class="text-2">Developer.</p>
+            <p class="text-3">Engineer.</p>
         </div>
     </div>
+    <section class="main">
+        <!-- <div class="dark">
+            
+        </div>
+        <div class="dark-2">
+            <p>Dark Side?</p>
+        </div> -->
+        <div class="nav">
+            <div class="left">
+                <h1>JS</h1>
+            </div>
+            <div class="right">
+                <p>blog</p>
+                <p>contact</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro animated fadeInDown delay-0.5s">
+                <p>Hi, my name is <span id="name">Japneet Singh</span>
+                    <br>
+                    I bring a <span id="desc">creative edge</span> in
+                    <br>
+                    solving problems.
+                </p>
+            </div>
+            <div class="short animated fadeInDown delay-1s">
+                <p>
+                        I love to create apps that provide a smooth user experience
+                        <br> 
+                        and have appealing visuals. But these days i am working to get
+                        <br>
+                        my head around Big Data and Cyber Sec.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section class="second">
+        <div class="work">
+            <p class="title">
+                Experience
+            </p>
+            <div class="exp">
+                <div class="row">
+                    <div class="cat job">
+                        <div class="term">
+                            <div class="first">
+                                <p class="comp">Cattlab</p>
+                                <p class="pos">Software Developer Intern</p>
+                            </div>
+                            <div class="low">
+                                <p class="date">October 2019 - Present</p>
+                                <div class="tag">
+                                    <div class="dota dw">
+                                        <p>node js</p>
+                                    </div>
+                                    <div class="dota dp">
+                                        <p>python</p>
+                                    </div>
+                                    <div class="dota do">
+                                        <p>ansible</p>
+                                    </div>
+                                    <div class="dota dm">
+                                        <p>react</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mav job">
+                        <div class="term">
+                            <div class="first">
+                                <p class="comp">MAVRIC</p>
+                                <p class="pos">Software Developer Intern</p>
+                            </div>
+                            <div class="low">
+                                <p class="date">Feb 2019 - Present</p>
+                                <div class="tag">
+                                    <div class="dota dw">
+                                        <p>node js</p>
+                                    </div>
+                                    <div class="dota dp">
+                                        <p>graphql</p>
+                                    </div>
+                                    <div class="dota do">
+                                        <p>mongo</p>
+                                    </div>
+                                    <div class="dota dm">
+                                        <p>scss</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cap job">
+                        <div class="term">
+                            <div class="first">
+                                <p class="comp">Capital One</p>
+                                <p class="pos">Data Engineer Intern</p>
+                            </div>
+                            <div class="low">
+                                <p class="date">June 2019 - Aug 2019</p>
+                                <div class="tag">
+                                    <div class="dota dw">
+                                        <p>python</p>
+                                    </div>
+                                    <div class="dota dp">
+                                        <p>kafka</p>
+                                    </div>
+                                    <div class="dota do">
+                                        <p>spark</p>
+                                    </div>
+                                    <div class="dota dm">
+                                        <p>ml</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="jqi job">
+                        <div class="term">
+                            <div class="first">
+                                <p class="comp">JQI</p>
+                                <p class="pos">Software Developer Intern</p>
+                            </div>
+                            <div class="low">
+                                <p class="date">Feb 2019 - June 2019</p>
+                                <div class="tag">
+                                    <div class="dota dw">
+                                        <p>js</p>
+                                    </div>
+                                    <div class="dota dp">
+                                        <p>react</p>
+                                    </div>
+                                    <div class="dota do">
+                                        <p>gsap</p>
+                                    </div>
+                                    <div class="dota dm">
+                                        <p>css</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="noc job">
+                        <div class="term">
+                            <div class="first">
+                                <p class="comp">DIT</p>
+                                <p class="pos">NOC Intern</p>
+                            </div>
+                            <div class="low">
+                                <p class="date">Sep 2018 - Feb 2019</p>
+                                <div class="tag">
+                                    <div class="dota dw">
+                                        <p>mvs</p>
+                                    </div>
+                                    <div class="dota dp">
+                                        <p>wireshark</p>
+                                    </div>
+                                    <div class="dota do">
+                                        <p>ticketing</p>
+                                    </div>
+                                    <div class="dota dm">
+                                        <p>server</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bit job">
+                        <div class="term">
+                            <div class="first">
+                                <p class="comp">Bitcamp</p>
+                                <p class="pos">Backend Developer</p>
+                            </div>
+                            <div class="low">
+                                <p class="date">Dec 2018 - Apr 2019</p>
+                                <div class="tag">
+                                    <div class="dota dw">
+                                        <p>python</p>
+                                    </div>
+                                    <div class="dota dp">
+                                        <p>cloudwatch</p>
+                                    </div>
+                                    <div class="dota do">
+                                        <p>ec2</p>
+                                    </div>
+                                    <div class="dota dm">
+                                        <p>logging</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="jqi job">
+                        <div class="term">
+                            <div class="first">
+                                <p class="comp">Technica</p>
+                                <p class="pos">FrontEnd Developer</p>
+                            </div>
+                            <div class="low">
+                                <p class="date">Apr 2018 - Nov 2018</p>
+                                <div class="tag">
+                                    <div class="dota dw">
+                                        <p>react</p>
+                                    </div>
+                                    <div class="dota dp">
+                                        <p>flask</p>
+                                    </div>
+                                    <div class="dota do">
+                                        <p>scss</p>
+                                    </div>
+                                    <div class="dota dm">
+                                        <p>sql</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <p class="touch">Get in touch</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/japneet98/">LinkedIn</a>
+            <a href="">Mail</a>
+            <a href="https://github.com/japsuchiha">Github</a>
+        </div>
+    </section>
+    <section class="footer">
+        <span>Made with <p class="animated infinite heartBeat">&#128151;</p> by japsuchiha.</span>
+    </section>
 </body>
 <script src="scripts/index.js"></script>
+</script>
 </html>

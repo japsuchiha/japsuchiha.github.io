@@ -14,4 +14,10 @@ gsap.to(".rec-4", 1, {scaleY: 0, height: "100vh", transformOrigin: "bottom",dura
 
 window.setTimeout(() => {
   document.querySelector('.animation').style.display = "none"
-},7000)
+},7000);
+
+window.setTimeout(() => {
+  document.querySelector('.main').style.display = "block"
+},7000);
+
+// fullpage_api.setAllowScrolling(false)
