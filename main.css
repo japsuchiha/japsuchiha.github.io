@@ -100,24 +100,26 @@ body .nav .right {
     margin-right: 0em;
   }
 }
-body .nav .right p {
+body .nav .right a {
   margin-top: 4.1em;
   margin-right: 2em;
   font-family: "Apercu";
   color: white;
   font-size: 1rem;
+  text-decoration: none;
 }
 @media screen and (max-width: 450px) {
-  body .nav .right p {
+  body .nav .right a {
     font-size: 0.75em;
     margin-right: 1em;
   }
 }
-body .nav .right p:nth-child(2) {
+body .nav .right a:nth-child(2) {
+  text-decoration: none;
   margin-right: 5em;
 }
 @media screen and (max-width: 450px) {
-  body .nav .right p:nth-child(2) {
+  body .nav .right a:nth-child(2) {
     margin-right: 3em;
   }
 }
@@ -305,12 +307,10 @@ body .contact .touch {
   margin: 0 auto;
   font-family: "Gilroy";
   color: white;
-  font-size: 8em;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  letter-spacing: 8px;
-  opacity: 0.7;
+  font-size: 3em;
+  max-width: 75%;
   text-align: center;
+  margin: 0 auto;
   margin-top: 1em;
 }
 @media screen and (max-width: 450px) {
@@ -318,6 +318,15 @@ body .contact .touch {
     font-size: 2em;
     margin-top: 1.5em;
   }
+}
+body .contact .touch a {
+  text-decoration: none;
+  color: #62BBC1;
+}
+body .contact .touch .email {
+  font-family: "Gilroy";
+  font-size: 2em;
+  color: white;
 }
 body .contact .social {
   display: flex;
