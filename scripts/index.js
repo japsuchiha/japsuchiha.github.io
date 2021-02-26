@@ -20,4 +20,5 @@ window.setTimeout(() => {
   document.querySelector('.main').style.display = "block"
 },7000);
 
+
 // fullpage_api.setAllowScrolling(false)
